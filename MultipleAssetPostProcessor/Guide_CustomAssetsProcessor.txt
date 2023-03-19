@@ -1,0 +1,19 @@
+L'utilisation de namespaces est une bonne pratique de programmation qui permet de créer du code clair, facilement lisible et compréhensible. Les namespaces aident à éviter les erreurs de nommage et rendent la maintenance du code plus simple et plus efficace.
+
+Les namespaces offrent de nombreux avantages pour la gestion et la maintenance de projets. Ils permettent de regrouper logiquement les classes et types de données en fonction de leur utilisation. 
+
+Les namespaces peuvent être utilisés pour organiser le code entre plusieurs Assemblies, permettant ainsi de travailler avec des bibliothèques de classes et des plugins tiers tout en évitant les conflits de noms. Les sous-espaces de noms offrent également un niveau de granularité supplémentaire, ce qui permet de mieux organiser le code et de le rendre plus facile à naviguer.
+
+En C#, les Assemblies sont essentiels pour la distribution et la maintenance du code en C#.
+Ce sont des fichiers binaires créés a partir du code (bibliothèque de classes, executables ou plugins) et qui est compilé en IL (Intermediate Language) avant d'être utilisables. Les Assemblies peuvent être créés à partir de code source C# ou même avec d'autres langages de programmation compatibles avec .NET.
+
+Lorsqu'un programme utilise un type défini dans un Assembly, il doit référencer cet Assembly dans son propre projet. Lors de l'exécution d'un programme, les Assemblies référencés sont chargés en mémoire par le Common Language Runtime (CLR).
+
+---
+
+Unity fourni la classe AssetPostProcessor pour permettre modifier les assets importés. On peut par automatiser des modifications spécifiques à exécuter sur l'Asset avant ou après son importation.
+
+Fonctions:
+- OnPreprocessAsset : appelé avant que l'asset ne soit importé dans le projet. (modifie l'asset avant qu'il ne soit chargé)
+- OnPostprocessAsset : appelé après que l'asset a été importé dans le projet. (modifie l'asset ou de le traiter une fois qu'il est chargé)
+- OnPostprocessAllAssets : appelé après que tous les assets aient été importés dans le projet.
